@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AuthorView.qml</file>
+        <file>BookView.qml</file>
+        <file>Editor.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Plugin.qml</file>
+        <file>PluginForm.ui.qml</file>
+    </qresource>
+</RCC>

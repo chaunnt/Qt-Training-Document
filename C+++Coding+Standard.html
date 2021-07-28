@@ -1,0 +1,2592 @@
+Message-ID: <1583305626.38628.1565159047628.JavaMail.confluence@US-AZU-APP2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_38627_1288796519.1565159047627"
+
+------=_Part_38627_1288796519.1565159047627
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>C++ Coding Standard</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>C++ Coding Standard</h1>
+    <div class=3D"Section1">
+        <p><br></p>
+<h1 id=3D"C++CodingStandard-1Outline"><strong><span style=3D"color: rgb(153=
+,51,102);"><span style=3D"color: rgb(0,0,0);">1 Outline</span></span></stro=
+ng></h1>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><p style=3D"text-a=
+lign: left;"><strong>BMS Document</strong></p></td>
+<td style=3D"text-align: center;" class=3D"confluenceTd"><p><strong>WI1003<=
+/strong></p></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>Confluence Version</strong=
+></td>
+<td colspan=3D"1" style=3D"text-align: center;" class=3D"confluenceTd">
+<div class=3D"content-wrapper">
+<p><span class=3D"versions-flat"><a href=3D"/pages/viewpage.action?pageId=
+=3D57018065" class=3D"version-item">31</a></span></p>
+</div></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Purpose</p></td>
+<td class=3D"confluenceTd"><p><span>To define C++ code development rules an=
+d guidelines </span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Scope</p></td>
+<td class=3D"confluenceTd"><p>Engineering - PRP</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Owner</p></td>
+<td class=3D"confluenceTd"><p>Engineering Software Manager</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-2WorkActivity"><span style=3D"color: rgb(0,0,0)=
+;"><strong>2 Work Activity</strong></span></h1>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-INTRODUCTION">INTRODUCTION</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Purpose">Purpose</h2>
+<p><br></p>
+<p>The purpose of this coding standard is to provide a common set of rules =
+and recommendations for developing code in C++. Adherence to this standard =
+should result in code which is easier to comprehend and to maintain, and wh=
+ich is more robust and portable. <br class=3D"atl-forced-newline"> Everyone=
+ will have their own ideas on what constitutes the best clarity and coding =
+practices. However there is benefit in having a consistent set of rules and=
+ guidelines that everyone in a project follows regardless of their own indi=
+vidual preferences. Where there is disagreement, it is the intention that t=
+his will simply be down to a matter of taste rather than any technical defi=
+ciency of the standard. <br class=3D"atl-forced-newline"> So through adopti=
+on of these conventions, putting aside personal preference, we become accus=
+tomed to the house style and achieve greater collective clarity than each u=
+sing our own preferences.</p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Scope">Scope</h2>
+<p><br></p>
+<p>This document specifies the Raymarine coding standard for C++ with regar=
+d to naming conventions, code layout and general coding practices. <br clas=
+s=3D"atl-forced-newline"> There is no attempt here to address the subject o=
+f design methodology or development process. <br class=3D"atl-forced-newlin=
+e"> It is intended that this document serve the purposes of the software ef=
+fort. If in a given situation it is appropriate to impose certain areas of =
+these standards less rigorously, for example for the sake of efficiency in =
+a critical routine or if a particular tool makes it necessary, then this is=
+ considered acceptable. However the basic principles of good coding must be=
+ adhered to. If any of the rules are broken, then the relevant code should =
+be accompanied by an explanatory comment.</p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Usingthisdocument">Using this document</h2>
+<p><br></p>
+<p>This document contains both rules which must be followed in order to wri=
+te reliable code, as well as hints and guidelines which have been found to =
+be useful and good practice through experience. <br class=3D"atl-forced-new=
+line"> !worddavc57d1e2f3f3d2eb4286dbe901e60a143.png|height=3D30,width=3D33!=
+The items which are mandated are marked with an exclamation mark icon (as t=
+his line is) and any deviations to these points will need to be individuall=
+y explained at code review. Since reviewing code is not an easy process it =
+is expected that deviations from these rules will be rare.</p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-LanguageSubset">Language Subset</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-RaymarineuseISO/IEC9899:1998C++">Raymarine use =
+ISO/IEC 9899:1998 C++</h2>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Everyprojectshouldusethesmallestpossiblesubseto=
+fISOC++">Every project should use the smallest possible subset of ISO C++</=
+h2>
+<p><br></p>
+<p>In particular a project policy should be defined for use of:</p>
+<p><br></p>
+<ul>
+<li>RTTI.</li>
+<li>IO Streams</li>
+<li>Exceptions</li>
+<li>STL</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Afileshouldnotexceed1000lines">A file should no=
+t exceed 1000 lines</h2>
+<p><br></p>
+<ul>
+<li>any files over 2000 lines would need strong justification</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Afunctionshouldbenomorethan100lineslong">A func=
+tion should be no more than 100 lines long</h2>
+<p><br></p>
+<ul>
+<li>Approximately 50 lines per function is recommended</li>
+<li>More than 200 lines would need strong justification</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-LineLength">Line Length</h2>
+<p><br></p>
+<ul>
+<li>Lines should be short to facilitate reading (8-10 words per line)</li>
+<li>Lines should not exceed 120 characters.</li>
+<li>Consider breaking up long statements into simpler ones, using local var=
+iables if required. (A good compiler optimizer will recombine your code &am=
+p; lose the locals.)</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Afunctionshouldcontainnomorethan5levelsofindent=
+ation">A function should contain no more than 5 levels of indentation</h2>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>Length of functions is a common cause of errors and leads to diffic=
+ulty in debugging and maintaining code. The figures of 50 &amp; 100 are des=
+igned to put a number to the 'about a screen' commonly accepted guidelines.=
+</em></li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-OneStatementPerLine">One Statement Per Line</h2=
+>
+<p><br></p>
+<ul>
+<li>There should be only one statement per line</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Don'tusecommaoperator,useseparatestatements.">D=
+on't use comma operator, use separate statements.</h2>
+<p><br></p>
+<ul>
+<li>The comma operator should not be used</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Usetheconditionalexpression?:withcaution">Use t=
+he conditional expression ?: with caution</h2>
+<p><br></p>
+<ul>
+<li>Consider whether the intent can be more clearly expressed with an if el=
+se or other construct</li>
+<li>Do not nest ?: operators.</li>
+<li>It is often useful in simple initialisations and return statements.</li=
+>
+<li>It is occasionally unavoidable e.g. in MACROs</li>
+<li>Put the condition in parentheses so as to set it apart from other code.=
+</li>
+<li>If possible, the actions for the test should be simple functions or con=
+stants.</li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-Var=3D(<condition>)?funct1():func2();">Var =3D =
+(<em>&lt;condition&gt;</em>) ? funct1() : func2();</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-or">or</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//Wherepossible?:statementsshouldbetransformedt=
+o:-">// Where possible ?: statements should be transformed to:-</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(<condition>)">if (<em>&lt;condition&gt;</em>=
+)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-Var=3Dfunct1();">Var =3D funct1();</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-else">else</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.1">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-Var=3Dfunct2();">Var =3D funct2();</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.1">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Useofgoto,continueandbreak">Use of goto, contin=
+ue and break</h2>
+<p><br></p>
+<ul>
+<li>Remember that these add to complexity and simple structures should be u=
+sed if possible</li>
+<li><em>goto</em> statements should not be used.</li>
+<li><em>break</em> and <em>continue</em> statements can usefully be employe=
+d to break out of switch, for, and while nesting with a success/failure ret=
+urn code.</li>
+<li>Comment each break and continue with a reference to the structure being=
+ exited</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-while(...)">while (...)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.2">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-...">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(disaster)">if (disaster)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.3">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-ErrorFlag=3Dtrue;">ErrorFlag =3D true;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-break;//while(...)">break; // while (...)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.2">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.3">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....1">...</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(ErrorFlag)">if (ErrorFlag)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.4">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-cleanupthemess">clean up the mess</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.4">}</h4>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-OneVariablePerLine">One Variable Per Line</h2>
+<p><br></p>
+<ul>
+<li>Related to this is always define one variable per line:</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-Wrong:">Wrong:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-char*A,B;//LookslikebothAandBarechar*s.">char* =
+A, B; // Looks like both A and B are char* s.</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-Right:">Right:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-char*A=3D0;">char* A =3D 0;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-charB=3D0;">char B =3D 0;</h4>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>Documentation can be added for the variable on the line.</em></li>
+<li><em>It's clear that the variables are initialised.</em></li>
+<li><em>Declarations are clear which reduces the probability of declaring j=
+ust a char when you meant to declare a pointer.</em></li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Useclasseswithprivatedataonlyandusestructforpub=
+licdata.">Use classes with private data only and use struct for public data=
+.</h2>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Minimisescope">Minimise scope</h2>
+<p><br></p>
+<p>Declare entities in block, function or class scope rather than global sc=
+ope and declare file-level globals (e.g. constants) as static, to prevent r=
+eference from outside.<br> Declare variables as late as possible, to show t=
+hat they are not used before then.</p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Assertions">Assertions</h2>
+<p><br></p>
+<ul>
+<li>Use a compile-time assert to enforce any compile-time-constant constrai=
+nts.</li>
+<li>Use a run-time assert to enforce pre-conditions, post-conditions and in=
+variants.</li>
+<li>Use a run-time assert to detect conditions that should be impossible.</=
+li>
+<li>Do not use assertions for run-time error conditions.</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>Assertions help to detect errors in our assumptions / design errors=
+</em></li>
+</ul>
+<p><br></p>
+<p><strong>Good Examples</strong><br> #include "CompileTimeAssert.h"<br> ty=
+pedef unsigned short int UINT16; <br class=3D"atl-forced-newline"> COMPILE_=
+TIME_ASSERT(sizeof(UINT16) =3D=3D 2);</p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-Names">Names</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-MakeNamesFit">Make Names Fit</h2>
+<p><br></p>
+<p>Names are at the heart of programming. If the name is appropriate everyt=
+hing fits together naturally, roles and relationships are clear, meaning is=
+ derivable, and operation will be as expected from normal reasoning.<br> Na=
+mes must differ by more than case, i.e. don't declare a formal parameter of=
+ SpeedMetres and a local variable called speedMetres, because they are the =
+same except in the case of the first letter, even if the latter starts by b=
+eing initialised by the former:<br> Names should differ by more than one ch=
+aracter, from anything that is accessible in the same scope.<br> <strong>Ba=
+d Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-voidspeedMetres(intSpeedMetres)//Badchoiceofide=
+ntifiers">void speedMetres (int SpeedMetres) // Bad choice of identifiers</=
+h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.5">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....2">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.5">}</h4>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Grammar">Grammar</h2>
+<p><br></p>
+<p>Use verbs for methods, nouns for members and classes, all spelt in UK En=
+glish. <br class=3D"atl-forced-newline"> The following table shows the nami=
+ng convention for each entity type:</p>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>Entity</p></td>
+<td class=3D"confluenceTd"><p>Notes</p></td>
+<td class=3D"confluenceTd"><p>Prefixes</p></td>
+<td class=3D"confluenceTd"><p>Options</p></td>
+<td class=3D"confluenceTd"><p>Style</p></td>
+<td class=3D"confluenceTd"><p>Suffixes</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Namespace</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Typedef Name</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>_t</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Class Name</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>C</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Template Name</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>T</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Interface</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>I</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Global Variable</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>p</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Member Variable</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>m_</p></td>
+<td class=3D"confluenceTd"><p>r, p</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Argument</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>r, p</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Local Variable</p></td>
+<td class=3D"confluenceTd"><p>noun Note1</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>r, p</p></td>
+<td class=3D"confluenceTd"><p>az_or_CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Constants</p></td>
+<td class=3D"confluenceTd"><p>noun (any scope)</p></td>
+<td class=3D"confluenceTd"><p>c_</p></td>
+<td class=3D"confluenceTd"><p>p</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Enum</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>e_</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Struct / enum tag</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>_t</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Class Method</p></td>
+<td class=3D"confluenceTd"><p>verb</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>C style function</p></td>
+<td class=3D"confluenceTd"><p>verb</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>lower_case</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Macro</p></td>
+<td class=3D"confluenceTd"><p>noun or verb</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>ALL_CAPS</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Macro Parameters</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Const ref. argument</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Non-const ref arg.</p></td>
+<td class=3D"confluenceTd"><p>noun</p></td>
+<td class=3D"confluenceTd"><p>r</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p>Note1: Single letter variable names may be used for loop counters within=
+ small blocks only. For larger blocks and for all other variables, CamelCas=
+e must be used. <br class=3D"atl-forced-newline"> The styles are defined as=
+ follows:</p>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped relative-table confluenceTable" style=3D"width: 86.=
+6703%;">
+<colgroup>
+<col style=3D"width: 8.80304%;">
+<col style=3D"width: 81.7606%;">
+<col style=3D"width: 9.43635%;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>Style</p></td>
+<td class=3D"confluenceTd"><p>Description</p></td>
+<td class=3D"confluenceTd"><p>Regex</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>CamelCase</p></td>
+<td class=3D"confluenceTd"><p>First letter of each word is capitalised. <br=
+ class=3D"atl-forced-newline">Digits are allowed after the first character =
+and also act as word separators. <br class=3D"atl-forced-newline">No unders=
+cores anywhere in these names.</p></td>
+<td class=3D"confluenceTd"><p>([A-Z][a-z0-9]*)+</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><span>az_or_CamelCase</span></p></td>
+<td class=3D"confluenceTd"><p><span>Single letter (small block only) or Cam=
+elCase</span></p></td>
+<td class=3D"confluenceTd"><p><span>[a-z]<span>([A-Z][a-z0-9]*)+</span></sp=
+an></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>lower_case</p></td>
+<td class=3D"confluenceTd"><p>All lower case, words separated by underscore=
+. <br class=3D"atl-forced-newline">Digits are allowed after the first chara=
+cter and also act as word separators.</p><p>No leading or trailing undersco=
+res.</p></td>
+<td class=3D"confluenceTd"><p>[a-z](_?[a-z0-9])*</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>ALL_CAPS</p></td>
+<td class=3D"confluenceTd"><p>All capitals, words separated by underscore <=
+br class=3D"atl-forced-newline">Digits are allowed after the first characte=
+r and also act as word separators. <br class=3D"atl-forced-newline">No lead=
+ing or trailing underscores</p></td>
+<td class=3D"confluenceTd"><p>[A-Z](_?[A-Z0-9])*</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-ClassNames">Class Names</h2>
+<p><br></p>
+<ul>
+<li>Name the class after what it is. If you can't think of what it is then =
+that is a clue you have not thought through the design well enough.</li>
+<li>Compound names of over three words are a clue that your design may be c=
+onfusing various entities in your system. Revisit your design.</li>
+<li>Avoid the temptation of bringing the name of the class from which a cla=
+ss is derived into the derived class's name. A class should stand on it's o=
+wn, it doesn't matter what it derives from.</li>
+<li>First character in a class name is an upper case 'C', unless it is a te=
+mplate class or interface class, in which case the first character is an up=
+per case 'T' or 'I' respectively.</li>
+<li>Note interface programming has been adopted as a language extension.</l=
+i>
+<li>Second character is upper case, in accordance with the word separation =
+rule.</li>
+<li>No underscores ('_').</li>
+</ul>
+<p><br></p>
+<p><strong>Good Examples</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-classCVesselPosition;">classCVesselPosition;</h=
+4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-template<classT>classTRadarRenderer;">template =
+&lt;class T&gt; class TRadarRenderer;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-interfaceIDatabase;">interfaceIDatabase;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-MethodandFunctionNames">Method and Function Nam=
+es</h2>
+<p><br></p>
+<ul>
+<li>A method or function name should make clear what it does: CheckForError=
+s() instead of ErrorCheck(), DumpDataToFile() instead of DataFile(). Classe=
+s are often nouns. By making function names verbs and following other namin=
+g conventions programs can be read more naturally. This will also make func=
+tions and data objects more distinguishable.</li>
+<li>Use the same rule as for class names - upper case letters as word separ=
+ators, lower case for the rest of a word.</li>
+</ul>
+<p><br></p>
+<p><strong>Good Examples</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-boolCheckForErrors()const;">bool CheckForErrors=
+() const;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-voidDumpDataToFile();">void DumpDataToFile();</=
+h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>Use a preceding underscore for private functions if it's appropriate. T=
+his is optional.</li>
+<li>When you need to get rid of a warning for an unused parameter, comment =
+the parameter out in the definition line if you can. Casting to void is acc=
+eptable if there is conditional compilation which means the parameter is so=
+metimes used and sometimes not.</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-ClassAttributeNames">Class Attribute Names</h2>
+<p><br></p>
+<ul>
+<li>Attribute names should be prepended with the characters 'm_'.</li>
+<li>After the 'm_' use the same rules as for variable names.</li>
+<li>'m_' always precedes other name modifiers like 'p' for pointer.</li>
+<li>Const reference parameters don't have an r prefix, but non-const refere=
+nces do. The justification for this is that a const reference isn't somethi=
+ng the function can change, so it may as well have been passed by value sem=
+antically.</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li>Prepending 'm_' prevents any conflict with method names. Often your met=
+hods and attribute names will be similar, especially for accessors, althoug=
+h if you adhere to the method naming guidelines then the methods should be =
+identifiable as verbs and the attributes as nouns.</li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-classCWaypointName">class CWaypointName</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.6">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-public:">public:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-typedefAUINT32WaypointId_t;///<UniqueWaypointId=
+">typedef AUINT32 WaypointId_t; ///&lt; Unique Waypoint Id</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-typedefstd::stringWaypointName_t;///<UsersNamef=
+orthisWaypoint">typedef std::string WaypointName_t; ///&lt; Users Name for =
+this Waypoint</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-WaypointId_TWaypointId()const;///<Getthecurrent=
+WaypointId">WaypointId_T WaypointId() const; ///&lt; Get the current Waypoi=
+nt Id</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-private:">private:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-WaypointId_tm_WaypointId;///<WaypointId,uniquet=
+osystem">WaypointId_t m_WaypointId; ///&lt; Waypoint Id, unique to system</=
+h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-WaypointName_tm_WaypointName;///<Waypointname,s=
+eenbyUser">WaypointName_t m_WaypointName; ///&lt; Waypoint name, seen by Us=
+er</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.6">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-VariableNames">Variable Names</h2>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-PointerVariables">Pointer Variables</h4>
+<p><br></p>
+<ul>
+<li>Never declare more than one variable on a line</li>
+<li>Pointers should be prepended by a 'p'</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li>The idea is that the difference between a pointer, object, and a refere=
+nce to an object is important for understanding the code, especially in C++=
+ where -&gt; can be overloaded, and casting and copy semantics are importan=
+t.</li>
+<li>Pointers really are a change of type so the '*' belongs near the type. =
+Multiple declarations on a single line is banned so there is no ambiguity.<=
+/li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-String*pName=3DnewString;">String* pName =3D ne=
+w String;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-String*pName,Name,Address;//WRONG,onlypNameisap=
+ointer.">String* pName, Name, Address; // WRONG, only pName is a pointer.</=
+h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-StringName;///<Commenteachvariable">String Name=
+; ///&lt; Comment each variable</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-StringAddress;///<commenteachvariable">String A=
+ddress; ///&lt; comment each variable</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-ReferenceVariables">Reference Variables</h4>
+<p><br></p>
+<ul>
+<li>References should be prepended with 'r'.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-IncludeUnitsinNames">Include Units in Names</h4=
+>
+<p><br></p>
+<ul>
+<li>If a variable represents time, weight, or some other unit then include =
+the unit of measure in the name so developers can more easily spot problems=
+. For example:</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-AUINT32m_TimeoutMsecs;">AUINT32 m_TimeoutMsecs;=
+</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-AUINT32m_MyWeightLbs;">AUINT32 m_MyWeightLbs;</=
+h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>In some cases it may be useful to turn units (i.e. engineering units) i=
+nto a class so bad conversions can be caught.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-SuffixFixedpointvalueswiththescalefactorused">S=
+uffix Fixed point values with the scale factor used</h4>
+<p><br></p>
+<ul>
+<li>Variables with fixed point scaling should include the scale factor that=
+ has been applied in encoding the variable. For example:</li>
+</ul>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-AUINT16DistanceMetresx4000=3D4000;//1m">AUINT16=
+ DistanceMetresx4000 =3D 4000; // 1m</h4>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Constants">Constants</h2>
+<p><br></p>
+<ul>
+<li>All constants should be of the format 'c_<em>VariableName</em>', this a=
+pplies whether global or member.</li>
+<li>This applies to constants only, there is no prefix indicating const-nes=
+s of arguments.</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li>Whilst the capitals and underscores (e.g. A_GLOBAL_CONSTANT) has been t=
+he format of choice for constants in the past, this new format has been cho=
+sen for improved readability and consistency with other class member variab=
+le naming conventions. The ALL CAPS format is reserved for MACROS.</li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-staticconstUINT32c_GlobalConstant=3D5;">static =
+const UINT32 c_GlobalConstant =3D 5;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-TypeNames">Type Names</h2>
+<p><br></p>
+<ul>
+<li>When possible for types based on native types make a typedef.</li>
+<li>Typedef names should use the same naming policy as for a class with the=
+ suffix '_t' appended</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li>This is already standard practice and works well.</li>
+<li>The '_T' is appended to make it clear this is not a class.</li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-typedefUINT16ModuleInfo_t;">typedef UINT16 Modu=
+leInfo_t;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-typedefUINT32SystemInfo_t;">typedef UINT32 Syst=
+emInfo_t;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>The practice of combining typedef and enum (or struct) is only required=
+ for dual C / C++ declarations. In this case the enum (or struct) tag shoul=
+d be omitted.</li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-typedefenum//ForcompatibilitywithConly">typedef=
+ enum // For compatibility with C only</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.7">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_StateErr,">e_StateErr,</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_StateOpen,">e_StateOpen,</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_StateRunning,">e_StateRunning,</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_StateDying,">e_StateDying,</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_StateNumValues">e_StateNumValues</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}State_T;">} State_T;</h4>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-#defineandMacroNames">#define and Macro Names</=
+h2>
+<p><br></p>
+<ul>
+<li>The use of <em>#define</em> is discouraged, as stated in section 5.1</l=
+i>
+<li>Put #defines and macros in all upper case using '_' separators.</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>This makes it very clear that the value is not alterable and in the=
+ case of macros, makes it clear that you are using a construct that require=
+s care.</em></li>
+<li><em>Some subtle errors can occur when macro names and enum labels use t=
+he same name.</em></li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#defineSELECT_MAX(A,B)blah">#define SELECT_MAX(=
+A,B) blah</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#defineIS_ERR(Err)blah">#define IS_ERR(Err) bla=
+h</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-EnumNames">Enum Names</h2>
+<p><br></p>
+<ul>
+<li>Enumerated constants should take the form e_&lt;TagName&gt;UniqueName w=
+here &lt;TagName&gt; is common to the enum tag and to all items in the enum=
+eration.</li>
+<li>When an enum is not embedded in a class, i.e. constant without class sc=
+oping, prefix the labels with a differentiating tag to prevent name clashes=
+</li>
+<li>Use FirstCaps style for tags and enumerations</li>
+<li>It's often useful to be able to say an enum is not in any of its <em>va=
+lid</em> states. Make a label for an un-initialised or error state. Make it=
+ the first label if possible.</li>
+<li>Where the enum is a contiguous list a final item (e.g e_PinNumValues) i=
+s often useful to enable range-checking.</li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-enumPin_t">enum Pin_t</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.8">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_PinUnknown,">e_PinUnknown,</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_PinOff,//mightconflictwithanotherOFFifPinwasn=
+otprepended">e_PinOff, // might conflict with another OFF if Pin was not pr=
+epended</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_PinOn,">e_PinOn,</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_PinNumValues">e_PinNumValues</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}Pin_T;">} Pin_T;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-CStyleFunctionNames">C Style Function Names</h2=
+>
+<p><br></p>
+<ul>
+<li>Most C functions will probably be incorporated into a project from lega=
+cy code, hence function names will already have been defined, however for n=
+ew C functions use the GNU convention of all lower case letters with '_' as=
+ the word delimiter</li>
+<li>This naming applies to C++ functions that are global in scope as well a=
+s mixed compilation with C.</li>
+<li>When mixed compilation is required, extern C is required on the C++ dec=
+laration.</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>It makes C functions very different from any C++ related names.</em=
+></li>
+</ul>
+<p><br></p>
+<p><strong>good Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-UINT32some_function()">UINT32 some_function()</=
+h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.9">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.7">}</h4>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Namespaces">Namespaces</h2>
+<p><br></p>
+<ul>
+<li>Namespaces should be used to prevent class name conflicts among librari=
+es from different vendors and groups.</li>
+<li>Use namespaces to scope definitions outside of classes.</li>
+<li>Never import namespace symbols ("using namespace") at global scope in a=
+ header file.</li>
+<li>Avoid "using" statements in implementation (.cpp) files.</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>Namespaces avoid conflicts between definitions with identical names=
+ in different parts of the code.</em></li>
+<li><em>When necessary, explicitly access a symbol with its fully qualified=
+ name ("MyNamespace::c_MyConst").</em></li>
+<li><em>Importing symbols at global scope in a header file may result in in=
+visible conflicts that are hard to track.</em></li>
+</ul>
+<p><br></p>
+<p><strong>Good Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-namespaceMyNamespace">namespace MyNamespace</h4=
+>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.10">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-typedefUINT32MyIndex_t;">typedef UINT32 MyIndex=
+_t;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-constUINT8c_MyConst=3D42;">const UINT8 c_MyCons=
+t =3D 42;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-};">};</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-UINT8Foo=3DMyNamespace::c_MyConst;">UINT8 Foo =
+=3D MyNamespace::c_MyConst;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-Comments">Comments</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Comments.1">Comments</h2>
+<p><br></p>
+<ul>
+<li>Good comments will explain why something is being done.</li>
+<li>What is being done is usually obvious, comments can help if it is unusu=
+al or not obvious.</li>
+<li>Use C-Style /* =E2=80=A6 */ comments for blocks</li>
+<li>Use C++ // comments for single lines.</li>
+<li>Use Doxygen with C style as defined in WI_05-12136.</li>
+<li>Use #ifdef &lt;initials&gt;_TO_DO to temporarily remove code and clean =
+up before check-in.</li>
+</ul>
+<p><br></p>
+<p><br class=3D"atl-forced-newline"> <strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.11">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//Block1(meaningfulcommentaboutBlock1)">// Bloc=
+k1 (meaningful comment about Block1)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-...somecode">... some code</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.12">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//Block2(meaningfulcommentaboutBlock2)">// Bloc=
+k2 (meaningful comment about Block2)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-...somecode.1">... some code</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}//EndBlock2">} // End Block2</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}//EndBlock1">} // End Block1</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>Where a block of code needs to be commented-out, use pre-processor dire=
+ctives such as #ifdef &lt;Initials&gt;_TO_DO =E2=80=A6 #endif // &lt;Initia=
+ls&gt;_TO_DO</li>
+<li>Where possible remove commented-out code before check-in.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-DocumentNullStatements">Document Null Statement=
+s</h2>
+<p><br></p>
+<ul>
+<li>Always document a null body for a <em>for</em> or <em>while</em> statem=
+ent so that it is clear that the null body is intentional and not missing c=
+ode.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-while((*Dest++=3D*Src++)!=3D0)">while ((*Dest++=
+ =3D *Src++) !=3D 0)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.13">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-;//Everythingisdoneinthecondition">; // Everyth=
+ing is done in the condition</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.8">}</h4>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-FileNames">File Names</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-NamingClassFiles">Naming Class Files</h2>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-C++FileExtensions">C++ File Extensions</h4>
+<p><br></p>
+<ul>
+<li>Use the <em>.h</em> extension for C++ header files and <em>.cpp</em> fo=
+r C++ source files.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-ClassDefinitioninOneFile">Class Definition in O=
+ne File</h4>
+<p><br></p>
+<ul>
+<li>Each class definition should be in its own file where each file is name=
+d directly after the class's name.</li>
+<li>For a file containing a standard class definition the name of the class=
+ minus the initial 'C' should be used =E2=80=93 e.g. for a file containing =
+C&lt;ClassName&gt;, the filename would be '&lt;ClassName&gt;.h'.</li>
+<li>For files containing template definitions T&lt;MyTemplate&gt;, the file=
+name should start with a 'T' e.g. 'T&lt;MyTemplate&gt;.h' and for files con=
+taining interface (abstract base) classes, the 'I' should be preserved, e.g=
+ I&lt;MyInterface&gt; is stored in 'I&lt;MyInterface&gt;.h'</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-ImplementationinOneFile">Implementation in One =
+File</h4>
+<p><br></p>
+<ul>
+<li>In general each class should be implemented in one source file:</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-ClassName.cpp">ClassName.cpp</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-Includefiles">Include files</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-IncludeFiles">Include Files</h2>
+<p><br></p>
+<ul>
+<li>Every include file shall itself reference includes that it depends on s=
+o that the include file will compile cleanly even in isolation</li>
+<li>Forward references to classes shall be used to eliminate the need to in=
+clude class declarations whenever possible</li>
+<li>Include references shall use the &lt;system&gt; or "project" notations =
+appropriately</li>
+<li>Include files shall not reference absolute paths, in general they shoul=
+d be relative to a specific directory to minimise the number of include pat=
+hs specified to the compiler</li>
+<li>Include files shall be treated as case sensitive (for portability to sy=
+stems that are case sensitive)</li>
+<li>Include directory references shall use "/" rather than "\" for portabil=
+ity</li>
+<li>All function declarations should have named parameters, including Qt si=
+gnals and slots, e.g. _Q_SIGNAL void ValueChanged(int Value)_ and not _Q_SI=
+GNAL void ValueChanged(int){_}. The QObject::connection function needs thes=
+e missing, but the metaobject compiler still handles these correctly.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-MultipleInclusionofHeaderFiles">Multiple Inclus=
+ion of Header Files</h4>
+<p><br></p>
+<ul>
+<li>Multiple inclusion protection shall always be incorporated.</li>
+<li>Protect by defining a pre-processor symbol constructed from <em>&lt;Fil=
+eName&gt;</em>_H_INCLUDED.</li>
+<li>Use #ifndef instead of #if !defined() as it allows easier double-check =
+that the define below matches the test.</li>
+</ul>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#ifndefHEADERNAME_H_INCLUDED">#ifndef HEADERNAM=
+E_H_INCLUDED</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#defineHEADERNAME_H_INCLUDED">#define HEADERNAM=
+E_H_INCLUDED</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....3">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#endif//HEADERNAME_H_INCLUDED">#endif // HEADER=
+NAME_H_INCLUDED</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-BuildOptimization">Build Optimization</h2>
+<p><br></p>
+<ul>
+<li>Only include build include file optimization in a portable fashion and =
+where it improves compilation speed.</li>
+<li>Note that #pragma once can cause problems on parallel build systems and=
+ may not give a significant improvement where the compiler includes an opti=
+misation to recognise the multiple inclusion protection.</li>
+</ul>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#ifndefHEADERNAME_H_INCLUDED.1">#ifndef HEADERN=
+AME_H_INCLUDED</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#defineHEADERNAME_H_INCLUDED.1">#define HEADERN=
+AME_H_INCLUDED</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#ifdefined(_ghs)&amp;&amp;defined(EDG_)">#if de=
+fined(_<em>ghs</em><em>) &amp;&amp; defined(</em><em>EDG</em>_)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#pragmaonce">#pragma once</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#endif">#endif</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....4">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-#endif//HEADERNAME_H_INCLUDED.1">#endif // HEAD=
+ERNAME_H_INCLUDED</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-BaseTypes">Base Types</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Usedomainspecifictypedef'stoabstractawayfromsta=
+ndardtypes">Use domain specific typedef's to abstract away from standard ty=
+pes</h2>
+<p><br></p>
+<ul>
+<li>Standard types should be referenced with the following preference:</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Usepredefinedtypesbool,size_twheneverappropriat=
+e.">Use predefined types bool, size_t whenever appropriate.</h2>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Ingeneralusethenewefficient'atleast'sizedtypes"=
+>In general use the new efficient 'at least' sized types</h2>
+<p><br></p>
+<ul>
+<li>These have at least the size of the sized corresponding type and are im=
+plemented in the most efficient size for the platform: AUINT8, AUINT16, ASI=
+NT32, ASINT64, etc.</li>
+<li>These are to be used after New E on MFDs, until then the fixed size typ=
+es are to be used.</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Usesizedtypeswhensizeisimportant">Use sized typ=
+es when size is important</h2>
+<p><br></p>
+<ul>
+<li>e.g. in network comms, files or to ensure overflow will not occur.</li>
+<li>When size is important use Raymarine standard UINT8, UINT16, SINT32, SI=
+NT64, etc. from the appropriate global include file.</li>
+</ul>
+<p><br></p>
+<p><br class=3D"atl-forced-newline"> <strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>The size of standard types is compiler dependent. For portability w=
+e need to ensure that the size of types is defined where it matters.</em></=
+li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-InitialiseAllVariables">Initialise All Variable=
+s</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-InitialiseallVariables">&nbsp;Initialise all Va=
+riables</h2>
+<p><br></p>
+<ul>
+<li>You shall always initialise variables before use. Always. Every time.</=
+li>
+<li>Initialise member variables using an initialiser list on constructors, =
+rather than within the body of the constructor.</li>
+<li>Initialize automatic variables at declaration, unless the initial value=
+ is dependent on something</li>
+<li>Always put the initializers in the constructor in the same order as the=
+y are declared in the class prototype.</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>Variables in an initialiser list are initialised in the order they =
+are declared in the class rather than the order that they appear in the lis=
+t.</em></li>
+<li><em>Un-initialised variables are the cause of a large proportion of bug=
+s.</em></li>
+<li><em>The initialiser list provides a mechanism for specifying the constr=
+uction details of members and base classes. Using an initialiser list ensur=
+es that members and base classes are initialised to the required values upo=
+n their construction, rather than assigning the values later after they hav=
+e already been default-constructed. It is often more efficient than using a=
+ssignment within the constructor body.</em></li>
+</ul>
+<p><br></p>
+<p><strong>Bad Example</strong> =E2=80=93 In this example m_VarOne will not=
+ be correctly initialised as, when it is initialised (first) m_VarTwo won't=
+ yet have been set to 5.</p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-classCClass1">class CClass1</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.14">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....5">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-CClass1();">CClass1();</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....6">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-UINT8m_VarOne;">UINT8 m_VarOne;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-UINT8m_VarTwo;">UINT8 m_VarTwo;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.9">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-CClass1::CClass1():m_VarTwo(5),m_VarOne(m_VarTw=
+o)//Error">CClass1::CClass1() : m_VarTwo(5), m_VarOne(m_VarTwo) // Error</h=
+4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.15">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....7">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.10">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-Const">Const</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-BeConstCorrect">Be Const Correct</h2>
+<p><br></p>
+<ul>
+<li>It is recommended that the <em>const</em> keyword be used when passing =
+as parameters objects that must not be modified. It takes time to get used =
+to doing, but makes for more robust code.</li>
+<li>Use the earlier placement of const option in complex declarations, wher=
+e the const is before the type</li>
+</ul>
+<p><br></p>
+<p><strong>Examples</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-voidf1(conststd::string&amp;RName);//passbyrefe=
+rence-to-const">void f1(const std::string&amp; RName);// pass by reference-=
+to-const</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-voidf2(conststd::string*PName);//passbypointer-=
+to-const">void f2(const std::string* PName);// pass by pointer-to-const</h4=
+>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-voidf3(std::stringName);//passbyvalue">void f3(=
+std::string Name);// pass by value</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-constint*pPointer//pPointerisamodifiablepointer=
+toaconstantint">const int* pPointer // pPointer is a modifiable pointer to =
+a constant int</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-int*constpPointer//pPointerisaconstantpointerto=
+amodifiableint">int* const pPointer // pPointer is a constant pointer to a =
+modifiable int</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-constint*constp//pPointerisaconstantpointertoac=
+onstantint">const int* const p // pPointer is a constant pointer to a const=
+ant int</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-NoMagicNumbers">No Magic Numbers</h2>
+<p><br></p>
+<ul>
+<li>Avoid using magic numbers within source code, i.e. numerical values wit=
+h no explanation, e.g.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(foo>=3D22)=E2=80=A6">if (foo &gt;=3D 22)=E2=
+=80=A6</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>Instead use a well-named constant (including Unit of Measure)</li>
+<li>Simple constants normally place the const early.</li>
+<li>Name should convey why the constant is being used, not what the value i=
+s</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-constUINT32c_TempThresholdC=3D123;///<UpperLimi=
+tinCelsius">const UINT32 c_TempThresholdC =3D 123; ///&lt; Upper Limit in C=
+elsius</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(Temperature>=3Dc_TempThresholdC)=E2=80=A6">i=
+f (Temperature &gt;=3D c_TempThresholdC)=E2=80=A6</h4>
+<p><br></p>
+<ul>
+<li>Don't create pointless constants such as;</li>
+</ul>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-staticconstUINT32c_OneThousandMilliseconds=3D10=
+00;">static const UINT32 c_OneThousandMilliseconds =3D 1000;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-better:">better:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-staticconstUINT32c_SettlingTimeMilliseconds=3D1=
+000;">static const UINT32 c_SettlingTimeMilliseconds =3D 1000;</h4>
+<p><br></p>
+<p><br class=3D"atl-forced-newline"> <strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>Repeated use of a numeric constant makes it difficult to change the=
+ value consistently.</em></li>
+<li><em>Having a constant describe its value complicates without clarifying=
+</em></li>
+</ul>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-ControlFlow">Control Flow</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-ConditionExpression">Condition Expression</h2>
+<p><br></p>
+<ul>
+<li>The condition expression in if, for and while must be logical not arith=
+metic. For example:</li>
+</ul>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(append!=3D0)//Comment">if (append !=3D 0) //=
+ Comment</h4>
+<p><br></p>
+<ul>
+<li>The fixed size boolean types (e.g. BOOL32) are to be regarded as Boolea=
+n and should be used without an arithmetic comparison.</li>
+</ul>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-BOOL32MyFlag;">BOOL32 MyFlag;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(MyFlag)">if (MyFlag)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....8">...</h4>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-WhenBracesareNeeded">When Braces are Needed</h2=
+>
+<p><br></p>
+<ul>
+<li>All <em>if</em>, <em>else</em>, <em>switch</em>, <em>while</em> and <em=
+>for</em> statements must have braces</li>
+<li>Braces are required even if the block is empty or if there is only a si=
+ngle statement within them.</li>
+<li>Comment why an empty block is empty</li>
+<li>For example:</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(SomeValue=3D=3D1)">if (SomeValue =3D=3D 1)</=
+h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.16">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-SomeValue=3D2;">SomeValue =3D 2;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.11">}</h4>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>It ensures that when someone adds a line of code later there are al=
+ready braces and they don't forget. It provides a more consistent look. Thi=
+s doesn't affect execution speed. It's easy to do.</em></li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-forandwhileFormatting"><em>for and while</em> F=
+ormatting</h2>
+<p><br></p>
+<ul>
+<li>Use loop structures without tricks like endless loops, break or continu=
+e whenever possible. The tricks add to complexity and are difficult to main=
+tain.</li>
+<li>It is recognised that endless loops are needed for example for threads.=
+</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Recursion">Recursion</h2>
+<p><br></p>
+<ul>
+<li>Avoid recursion, it can generally be transformed to iteration.</li>
+<li>Recursion must never be unconstrained</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-ifthenelseFormatting"><em>if then else</em> For=
+matting</h2>
+<p><br></p>
+<ul>
+<li>Use the following layout for If Then Else statements:</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(<condition>)//Comment">if (<em>&lt;condition=
+&gt;</em>) // Comment</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.17">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....9">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.12">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-elseif(<condition>)//Comment">else if (<em>&lt;=
+condition&gt;</em>) // Comment</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.18">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....10">. . .</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.13">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-else//Comment">else // Comment</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.19">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....11">. . .</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.14">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>If you have <em>else if</em> statements then it is usually a good idea =
+to always have an else block for finding unhandled cases.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-switchFormatting"><em>switch</em> Formatting</h=
+2>
+<p><br></p>
+<ul>
+<li>Falling through a case statement into the next case statement shall be =
+permitted as long as a comment is included.</li>
+<li>Multiple consecutive case labels that use the same block are not regard=
+ed as fall-through and do not need a comment.</li>
+<li>The <em>default</em> case should always be present and trigger an error=
+ if it should not be reached, yet is reached.</li>
+<li>If you need to create variables put all the case code in a block.</li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-switch(...)">switch (...)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.20">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-case1:">case 1:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....12">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//FALLTHROUGH">// FALL THROUGH</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-case2:">case 2:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.21">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-intValue;">int Value;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....13">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.15">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-break;">break;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-case3:">case 3:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-case4:">case 4:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....14">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-break;.1">break;</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-default:">default:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-break;.2">break;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.16">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-MultipleReturns">Multiple Returns</h2>
+<p><br></p>
+<ul>
+<li>A function should have a single point of return.</li>
+<li>Except for precondition checks at the start of a function.</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><=
+p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p=
+><p></p><p></p><p></p><p></p><p></p><p></p><p><em>"A single return statemen=
+t at the end of a function creates a single, known point that is passed thr=
+ough at the termination of function execution. Multiple returns in a single=
+ unit should be avoided as much as possible, unless the use of a single ret=
+urn would cause the code to be difficult to understand or maintain." [Sourc=
+e: NASA C++ coding standard]</em></p><p></p><p></p><p></p><p></p><p></p><p>=
+</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><=
+p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p=
+></li>
+<li><em>Embedded returns increase complexity (Essential Complexity / knots)=
+ and lead to confusion in maintenance</em></li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-Brackets/spaces">Brackets / spaces</h1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-WhiteSpace">White Space</h2>
+<p><br></p>
+<p>Use white space to divide code into logical segments, to improve readabi=
+lity.</p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Parentheses()withKeyWordsandFunctionsPolicy">Pa=
+rentheses <em>()</em> with Key Words and Functions Policy</h2>
+<p><br></p>
+<ul>
+<li>Do put a space between parentheses and keywords..</li>
+<li>Do put parentheses next to function names.</li>
+<li>Place the parentheses tightly around the contents. Do not insert a spac=
+e immediately after the opening parenthesis or immediately before the closi=
+ng one.</li>
+<li>Do use a space on both sides of all binary operators (+,-,*,/,&amp;,|,^=
+,&lt;&lt;,&gt;&gt;,&amp;&amp;,||,etc.)</li>
+<li>Do place unary pointer and reference operators close to the type</li>
+<li>Do place unary +/- next to the operand (no space between).</li>
+<li>Do use parentheses to clarify operator precedence, which may not be cle=
+ar to all readers</li>
+<li>In particular always use parentheses with bit operators and when mixing=
+ arithmetic / bitwise / comparison / logical operators.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>Do not use parentheses in return statements when it's not necessary.</l=
+i>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>Keywords are not functions. By putting parentheses next to them key=
+words and function names are made to look alike.</em></li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(<condition>)//spacebetweenkeywordandbracket"=
+>if (<em>&lt;condition&gt;</em>) // space between keyword and bracket</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.22">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.17">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-while(<condition>)//spacebetweenkeywordandbrack=
+et">while (<em>&lt;condition&gt;</em>) // space between keyword and bracket=
+</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.23">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.18">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-strcpy(Src,Dest);//Spacesonlyaftereachcomms">st=
+rcpy(Src, Dest); // Spaces only after each comms</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-return1;//Nobrackets">return 1; // No brackets<=
+/h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-BracePlacement">Brace Placement</h2>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>Place brace under and inline with keywords:</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(<condition>).1">if (<em>&lt;condition&gt;</e=
+m>)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.24">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....15">...</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.19">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-elseif(<condition>)">else if (<em>&lt;condition=
+&gt;</em>)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.25">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....16">. . .</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.20">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-else.1">else</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.26">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....17">. . .</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.21">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-switch(<expression>)">switch (<em>&lt;expressio=
+n&gt;</em>)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.27">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_Option1:">e_Option1:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//Codehere">// Code here</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-break;.3">break;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-e_Option2:">e_Option2:</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-break;.4">break;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-default://Alwaysincludeadefault">default: // Al=
+ways include a default</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-break;.5">break;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.22">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-while(<condition>)">while (<em>&lt;condition&gt=
+;</em>)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.28">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....18">. . .</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}//Referenceconditionatendofblockinlongblocks">=
+} // Reference condition at end of block in long blocks</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-for(;;)">for ( ; ; )</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.29">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....19">. . .</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.23">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-do//Referenceconditioninlongblocks">do // Refer=
+ence condition in long blocks</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.30">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-....20">. . .</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}while(<condition>);">} while (<em>&lt;conditio=
+n&gt;</em>);</h4>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>Allows easier matching of opening and closing braces, both visually=
+ and when using automated brace matching within some editors.</em></li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-FormattingMethodswithMultipleArguments">Formatt=
+ing Methods with Multiple Arguments</h2>
+<p><br></p>
+<ul>
+<li>Methods with more than three parameters should be formatted as follows:=
+</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-UINT32AnyMethod(intArg1,intArg2,">UINT32 AnyMet=
+hod(int Arg1, int Arg2,</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-intArg3,intArg4);">int Arg3, int Arg4);</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Tabs">Tabs</h2>
+<p><br></p>
+<ul>
+<li>Indent using 4 spaces for each level.</li>
+<li><strong>Do not use tabs, use spaces</strong>. All our editors can subst=
+itute spaces for tabs, use 4 spaces per tab.</li>
+</ul>
+<p><br></p>
+<p><strong>Justification</strong></p>
+<p><br></p>
+<ul>
+<li><em>When using tabs, if people use different tab settings the code may =
+be hard to read or may print badly, which is why spaces are preferable to t=
+abs.</em></li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h1 id=3D"C++CodingStandard-AvoidSchoolboyErrors">Avoid Schoolboy Errors</h=
+1>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Casting">Casting</h2>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-UsetheC++castingoperatorsratherthanCstylecastin=
+g">Use the C++ casting operators rather than C style casting</h4>
+<p><br></p>
+<p><strong>Justification</strong><br> static_cast <em>and</em> reinterpret_=
+cast <em>provide compile-time type checking. From Stroustrup p130:</em> <br=
+ class=3D"atl-forced-newline"> <em>The</em> static_cast <em>operator conver=
+ts between related types such as one pointer type to another =E2=80=A6an in=
+tegral type to an enumeration or a floating-point type to an integral type.=
+ The</em> reinterpret_cast <em>handles conversions between unrelated types =
+such as an integer to a pointer or a pointer to an unrelated pointer type. =
+This distinction allows the compiler to apply some minimal type checking fo=
+r</em> static_cast <em>and makes it easier for a programmer to find the mor=
+e dangerous conversions represented as</em> reinterpret_cast<em>s.</em></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-Don'tuseconst_cast.">Don't use const_cast.</h4>
+<p><br></p>
+<p><strong>Justification</strong><br> <em>Data is usually const for a reaso=
+n</em></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-Usedynamic_castwithcaution">Use dynamic_cast wi=
+th caution</h4>
+<p><br></p>
+<p>Dynamic cast provides greater type safety, but does require RTTI which i=
+s not necessarily supported on all platforms.<br> <strong>Justification</st=
+rong><br> <em>May cause RTTI to be built into the image which increases cod=
+e size</em></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-ErrorReturnCheckPolicy">&nbsp;Error Return Chec=
+k Policy</h2>
+<p><br></p>
+<ul>
+<li>Check every system call for an error return, unless you know you wish t=
+o ignore errors. For example, <em>printf</em> returns the number of charact=
+er printed but rarely would you check for it. If you explicitly want to ign=
+ore the return code, cast it to void to tell the reader that you've conside=
+red and ignored the return code.</li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-(void)printf(&quot;helloworld/n&quot;);">(void)=
+printf("hello world/n");</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>Include the system error text for every system error message.</li>
+</ul>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-NeverThrowExceptionsinDestructors">Never Throw =
+Exceptions in Destructors</h2>
+<p><br></p>
+<ul>
+<li>Exceptions thrown in a destructor will mean that any subsequent code in=
+ the destructor will not be executed. Hence if the subsequent code is inten=
+ded to free resources this will result in a resource leak.</li>
+<li>Special care must be taken to catch exceptions which may occur during o=
+bject destruction. Special care must also be taken to fully destruct an obj=
+ect when it throws an exception.</li>
+</ul>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//WRONG!">// WRONG!</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-Sql::~Sql(void)">Sql::~Sql(void)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.31">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-deleteconnection;">delete connection;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-deletebuffer;//won'tbecalledifconnectionthrowsa=
+nexception">delete buffer;// won't be called if connection throws an except=
+ion</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.24">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//BETTER">// BETTER</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-Sql::~Sql(void).1">Sql::~Sql(void)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.32">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-try">try</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.33">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-deleteconnection;.1">delete connection;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.25">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-catch(=E2=80=A6)">catch (=E2=80=A6)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.34">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-=E2=80=A6//No'throw'inhere">=E2=80=A6 // No 'th=
+row' in here</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.26">}</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-deletebuffer;">delete buffer;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.27">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Passlargeobjectsbyconstreference">Pass large ob=
+jects by const reference</h2>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Don'tcomparewithTrue">Don't compare with True</=
+h2>
+<p><br></p>
+<p><strong>Example</strong></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//WRONG!.1">// WRONG!</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-BOOL8a;">BOOL8 a;</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-=E2=80=A6">=E2=80=A6</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(a=3D=3DTRUE)">if (a =3D=3D TRUE)</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-{.35">{</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-=E2=80=A6.1">=E2=80=A6</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-}.28">}</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//BETTER.1">// BETTER</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(a!=3DFALSE)">if (a !=3D FALSE)</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-//BEST">// BEST</h4>
+<p><br></p>
+<h4 id=3D"C++CodingStandard-if(a)">if (a)</h4>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-Putsharedtypesinaseparatetypesheader(namespaced=
+toModuleTypes)ratherthanhavingpublictypedefsinaclass.Thisreducesclasscoupli=
+ngbecauseclientswanttousethetypesdon'thavetoincludetheclassintheirheaderfor=
+slots,etc.">Put shared types in a separate types header (namespaced to Modu=
+leTypes) rather than having public typedefs in a class. This reduces class =
+coupling because clients want to use the types don't have to include the cl=
+ass in their header for slots, etc.</h2>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-AvoidtheRAYASSERT(0=3D=3D&quot;Errormessage&quo=
+t;)construction.Cppcheckrejectsit.WeshouldnowbeusingRAYFATALinstead,whichac=
+hievesthesamegoal.">Avoid the RAYASSERT(0 =3D=3D "Error message") construct=
+ion. Cppcheck rejects it. We should now be using RAYFATAL instead, which ac=
+hieves the same goal.&nbsp;</h2>
+<p><br></p>
+<h2 id=3D"C++CodingStandard-ConfluenceVersionHistory">Confluence Version Hi=
+story</h2>
+<p><span class=3D"version-history"></span></p>
+<table class=3D"confluenceTable" summary=3D"Version History">
+<tbody>=20
+<tr>=20
+<th class=3D"confluenceTh">Version</th>=20
+<th class=3D"confluenceTh">Date</th>=20
+<th class=3D"confluenceTh">Author</th>=20
+<th class=3D"confluenceTh">Comment</th>=20
+</tr>
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D57018065" class=3D"history-version">31</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D109445186" class=3D"history-version">30</a>=
+</td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D104759360" class=3D"history-version">29</a>=
+</td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D103710762" class=3D"history-version">28</a>=
+</td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D102006807" class=3D"history-version">27</a>=
+</td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D100958308" class=3D"history-version">26</a>=
+</td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D99418189" class=3D"history-version">25</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D97321028" class=3D"history-version">24</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D96370725" class=3D"history-version">23</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D95092750" class=3D"history-version">22</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D93618230" class=3D"history-version">21</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D91619360" class=3D"history-version">20</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D86835228" class=3D"history-version">19</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D86016049" class=3D"history-version">18</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D84574253" class=3D"history-version">17</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D83427430" class=3D"history-version">16</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D78970957" class=3D"history-version">15</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D77037645" class=3D"history-version">14</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D74154016" class=3D"history-version">13</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D72384578" class=3D"history-version">12</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D69697578" class=3D"history-version">11</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D69140530" class=3D"history-version">10</a><=
+/td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D67141704" class=3D"history-version">9</a></=
+td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D66158679" class=3D"history-version">8</a></=
+td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D63242266" class=3D"history-version">7</a></=
+td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D61636660" class=3D"history-version">6</a></=
+td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D60358713" class=3D"history-version">5</a></=
+td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Migration of unmigrated content =
+due to installation of a new plugin</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D58294362" class=3D"history-version">4</a></=
+td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 17, 2017 12:09<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Changed colour of main headings =
+to black</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D57020847" class=3D"history-version">3</a></=
+td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 15, 2017 16:03<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">Added Confluence Version History=
+ Macro</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D57020010" class=3D"history-version">2</a></=
+td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 10, 2017 16:43<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment">First Issue from BMS WI1003 v8.0=
+ Dated 01/10/14. Corrected formatting issues on import</td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/pages/viewpage.action?pageId=3D57018080" class=3D"history-version">1</a></=
+td>=20
+<td class=3D"confluenceTd"><span class=3D"history-date">Nov 10, 2017 16:01<=
+/span></td>=20
+<td class=3D"confluenceTd"><a href=3D"https://confluencecommercial.flir.com=
+/display/~Andrew.Thorne@raymarine.com" class=3D"history-user">Thorne, Andre=
+w</a></td>=20
+<td class=3D"confluenceTd history-comment"></td>=20
+</tr>=20
+</tbody>
+</table>=20
+<p></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_38627_1288796519.1565159047627--

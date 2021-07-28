@@ -1,0 +1,441 @@
+Message-ID: <351001992.38630.1565159063541.JavaMail.confluence@US-AZU-APP2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_38629_305695189.1565159063541"
+
+------=_Part_38629_305695189.1565159063541
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>QML Coding Conventions | Qt 5.7</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>QML Coding Conventions | Qt 5.7</h1>
+    <div class=3D"Section1">
+        <div class=3D"contentLayout2">=20
+<div class=3D"columnLayout two-right-sidebar" data-layout=3D"two-right-side=
+bar">=20
+<div class=3D"cell normal" data-type=3D"normal">=20
+<div class=3D"innerCell">=20
+<p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1565159063509 {padding: 0px;}
+div.rbtoc1565159063509 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1565159063509 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1565159063509">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#QMLCodingConventions|Qt5.7-SoftwareTestFriendly">Software T=
+est Friendly</a></li>=20
+<li><a href=3D"#QMLCodingConventions|Qt5.7-QMLRepeaters">QML Repeaters</a><=
+/li>=20
+<li><a href=3D"#QMLCodingConventions|Qt5.7-SortingTables">Sorting Tables</a=
+>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#QMLCodingConventions|Qt5.7-TurnDynamicSortingOff">Turn Dyna=
+mic Sorting Off</a></li>=20
+<li><a href=3D"#QMLCodingConventions|Qt5.7-ChangingValuesintheSorted-byColu=
+mn">Changing Values in the Sorted-by Column</a></li>=20
+<li><a href=3D"#QMLCodingConventions|Qt5.7-Example">Example</a></li>=20
+</ul> </li>=20
+</ul>=20
+</div>
+<p></p>
+<div class=3D"sharelinks-link-meta-data">
+<div class=3D"panel" style=3D"border-width: 1px;">
+<div class=3D"panelContent">=20
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image confluence-external-resour=
+ce" width=3D"16" src=3D"http://d3hp9ud7yvwzy0.cloudfront.net/wp-content/the=
+mes/oneqt/images/favicon.ico.gzip" data-image-src=3D"http://d3hp9ud7yvwzy0.=
+cloudfront.net/wp-content/themes/oneqt/images/favicon.ico.gzip"></span>&nbs=
+p;<a class=3D"external-link" href=3D"http://doc.qt.io/qt-5/qml-codingconven=
+tions.html" rel=3D"nofollow">doc.qt.io/qt-5/qml-codingconv=E2=80=A6</a></p>
+<p style=3D"text-align: left;"><span style=3D"color: rgb(128,128,128);"><em=
+>No link preview available. Please open the link for details.</em></span></=
+p>
+<p><strong><a class=3D"external-link" href=3D"http://doc.qt.io/qt-5/qml-cod=
+ingconventions.html" rel=3D"nofollow">Open link</a></strong></p>=20
+</div>
+</div>
+<p>&nbsp;</p>
+<p>In addition:</p>
+<p>&nbsp;</p>
+</div>
+<div class=3D"comment-content wiki-content">
+<ol>
+<li>Attached properties, such as Keys.onReleased or Component.onCompleted, =
+should be placed after child objects and before states.</li>
+<li>Use actual types in QML wherever possible =E2=80=93&nbsp;for example, U=
+nits.dp() should be assigned into a property of type 'real', not var.</li>
+<li>We are following QML coding conventions in QML files, so braces on the =
+same line as the element name ('Row {').</li>
+<li>Properties in the root element don't need to be prefixed with the compo=
+nent name. We can use 'itemWidth' instead of 'appInfoBoxItemWidth'.</li>
+<li>Fonts should be sized using '<code>font.pixelSize</code>' and not '<cod=
+e>font.pointSize</code>', because we cannot rely on the DPI setting being c=
+orrect for Atom hardware.</li>
+<li>QML components should not reference properties inherited from their par=
+ent/ancestor components. Define a property at the top-level of the componen=
+t and bind it to the right value at instantiation&nbsp;=E2=80=93 this provi=
+des better code reuse and readability.</li>
+</ol>
+<p>&nbsp;</p>
+<h1 id=3D"QMLCodingConventions|Qt5.7-SoftwareTestFriendly">Software Test Fr=
+iendly</h1>
+<ol>
+<li>Giving objects appropriate IDs when ever possible as the swt team try t=
+o identify most objects by this property.</li>
+<li>If you have sets of similar image files, giving them a consistent namin=
+g standard will make testing easier e.g. (unknown.png, unknown_normal.png, =
+unknown_dangerous.png)</li>
+<li><p>In some cases a software tester will need to access back end/non UI/=
+non Qitem objects in order to support test creation.<br>Example of this wou=
+ld be the chart view service presenter:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: cpp; gutter: false; theme: Eclipse" data-theme=3D"Eclipse">=09GOOD:
+    property QtObject chartViewService: ChartViewService {
+        chartAppPresenter: appPresenter
+        property size mysize: Qt.size(app.width, app.height)
+        ...
+    }
+=09BAD:
+=09ChartViewService {
+        id: chartViewService
+        property size mysize: Qt.size(app.width, app.height)
+        ...
+    }</pre>=20
+</div>
+</div><p>If you don't do this we can not see it!</p></li>
+</ol>
+<p>&nbsp;</p>
+<h1 id=3D"QMLCodingConventions|Qt5.7-QMLRepeaters">QML Repeaters</h1>
+<p>A common requirement is to use a QML Repeater to do things to a list or =
+map of data.&nbsp; This is used show a table in a dialog, or to render a se=
+t of waypoints / AIS Targets.&nbsp; We define a QmlMapModel or QmlListModel=
+ of presentation sub-objects (e.g. AisDisplayData) in an owning C++ present=
+er (e.g. AisPresenter), and then use the repeater to process them all.&nbsp=
+;</p>
+<p>&nbsp;</p>
+<p>We've found the following guidelines helpful to maintain performance</p>
+<ol>
+<li>Create a separate presentation type for the objects - we have to do Dat=
+a Item formatting so often that trying to make the SystemFunction object pr=
+esentation-friendly isn't possible, and dependency direction rules mean tha=
+t the SystemFunction layer can't depend on the presentation layer.</li>
+<li>Avoid signal handlers in the per-item code.&nbsp; Do the signal slot co=
+nnections in C++ (either in the presentation object or the owning presenter=
+) and then depend on the property notify signals to cause the QML to update=
+.&nbsp; Then have straight bindings from the properties to the QML objects =
+you need.&nbsp; Particularly avoid LatLong / MC coordinate to screen conver=
+sions in QML.&nbsp; Have screen coordinate properties and do the conversion=
+ in C++.</li>
+<li>Make the map / list models constant.&nbsp; They emit their own changed =
+signals, so after adding an element, you don't need your own map notify.</l=
+i>
+<li>Sorting and / or filtering should be done with one of the QSortFilterPr=
+oxyModel derivatives defined in QmlModelBase.h:
+<ol>
+<li>SortableProxyModel does sorting by your feeding in a sort object proper=
+ty and a less than operator</li>
+<li>BoolPropertyFilterProxyModel does filtering by your feeding in a boolea=
+n filter property (i.e. a boolean property in the subtype - if its value is=
+ false the item is filtered out)</li>
+<li>SortableBoolPropertyFilterProxyModel does both by your feeling in a sor=
+t property, a less than operator working on it, and a boolean filter proper=
+ty.</li>
+</ol></li>
+<li>However, you almost certainly want fine control over the scehduling of =
+the sorts by turning off dynamic sorting on the Proxy Model, and calling so=
+rt(sortColumn()) to resort at the times you want to. See below.</li>
+<li>In general, the presentation subobjects should have shared notify signa=
+ls for multiple properties, mapped to how they're updated.&nbsp; AIS target=
+s are updated by different static and dynamic data messages, so there shoul=
+d be a single notify signal for the static data, and a single notify signal=
+ for the dynamic data.&nbsp; It's also a good idea to do change detection t=
+o avoid unnecessary signal emission.&nbsp;</li>
+</ol>
+<h1 id=3D"QMLCodingConventions|Qt5.7-SortingTables">Sorting Tables</h1>
+<p>We have encountered a number of problems with adding sorting to tables. =
+To overcome them:</p>
+<h2 id=3D"QMLCodingConventions|Qt5.7-TurnDynamicSortingOff">Turn Dynamic So=
+rting Off</h2>
+<p>At the moment dynamic sorting is on by default (see<code>&nbsp;QmlListMo=
+del::createSortableProxyModel()</code> and&nbsp;<code>QmlMapModel::createSo=
+rtableProxyModel()</code>). You should turn it off as soon as you have call=
+ed&nbsp;<span style=3D"color: rgb(0,0,0);"><code>createSortableProxyModel()=
+</code>. Once all existing code is fixed we should change the default to of=
+f.</span></p>
+<p>The<code>&nbsp;QSortFilterProxyModel&nbsp;</code>documentation for dynam=
+ic sorting simply says that the <em style=3D"line-height: 1.42857;">"proxy =
+model is dynamically sorted and filtered whenever the contents of the sourc=
+e model change"</em>. We have found that with dynamic sorting enabled, a ch=
+ange to any (sortable) property in <strong style=3D"line-height: 1.42857;">=
+any</strong> cell causes a full re-sort of the list, which in turn re-rende=
+rs every cell. In effect, dynamic sorting causes the entire table to create=
+d and rendered from scrach, when any property on any row changes.</p>
+<p>With dynamic sorting off we have a problem when items are added or remov=
+ed from the model. The table does not update. To overcome this we have adde=
+d&nbsp;<code>SortableProxyModel::</code><span style=3D"color: rgb(0,0,0);">=
+<code>resort()</code>. This should be called whenever the model has changed=
+ substantially. Note that it can be expensive, causing the whole table to b=
+e sorted and re-rendered from scratch.</span></p>
+<h2 id=3D"QMLCodingConventions|Qt5.7-ChangingValuesintheSorted-byColumn"><s=
+pan style=3D"color: rgb(0,0,0);">Changing Values in the Sorted-by Column</s=
+pan></h2>
+<p><span style=3D"color: rgb(0,0,0);"><span style=3D"color: rgb(0,0,0);">Tu=
+rning off dynamic sorting seems to stop all automatic sorting, including wh=
+en the sorted-by property of a row has changed.&nbsp;</span>If you are alte=
+ring the value that the table is sorted by you must ask the table to re-sor=
+t. Take care to do this after all rows have been changed, not after each va=
+lue is changed. A typical example of this would be updating the range and b=
+earing of all targets in a list.</span></p>
+<p><span style=3D"color: rgb(0,0,0);">To help with this we have added&nbsp;=
+<code><span>SortableProxyModel::</span></code></span><code><span style=3D"c=
+olor: rgb(0,0,0);">resortIfColumnChanged</span><span style=3D"color: rgb(0,=
+0,0);">(</span><span style=3D"color: rgb(128,0,128);">QString</span><span s=
+tyle=3D"color: rgb(192,192,192);">&nbsp;</span><span style=3D"color: rgb(0,=
+0,0);">changedPropertyName</span></code><span style=3D"color: rgb(0,0,0);">=
+<code>)</code>. This should be called with the name of the property you hav=
+e just changed. If this happens to be the current sorted-by property,&nbsp;=
+the table will be sorted, otherwise the request will be ignored.</span></p>
+<h2 id=3D"QMLCodingConventions|Qt5.7-Example"><span style=3D"color: rgb(0,0=
+,0);">Example</span></h2>
+<p><span style=3D"color: rgb(0,0,0);"><code>WaypointsInGroupPresenter</code=
+> has been written using these guidelines.</span></p>
+<p><span style=3D"color: rgb(0,0,0);">&nbsp;</span></p>
+</div>
+</div>=20
+</div>=20
+<div class=3D"cell aside" data-type=3D"aside">=20
+<div class=3D"innerCell">=20
+<p>&nbsp;</p>
+</div>=20
+</div>=20
+</div>=20
+</div>
+    </div>
+</body>
+</html>
+------=_Part_38629_305695189.1565159063541--
